@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-75.0%" y="-75.0%" width="250.0%" height="250.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="-24.9737393%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF8700" offset="0%"></stop>
+            <stop stop-color="#FFCE4C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Pro备份" transform="translate(-143.000000, -717.000000)">
+            <g id="编组-2">
+                <g id="编组-5" transform="translate(0.000000, 717.000000)">
+                    <g id="编组-6" transform="translate(158.000000, 0.000000)">
+                        <rect id="矩形" fill="#FEBF48" filter="url(#filter-1)" x="10" y="25" width="40" height="40" rx="10"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="10"></rect>
+                        <rect id="矩形" fill="#FFFFFF" x="29" y="18" width="3" height="25" rx="1.5"></rect>
+                        <rect id="矩形" fill="#FFFFFF" transform="translate(30.500000, 30.500000) rotate(90.000000) translate(-30.500000, -30.500000) " x="29" y="18" width="3" height="25" rx="1.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

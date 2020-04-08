@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="16px" viewBox="0 0 11 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Pro备份" transform="translate(-169.000000, -50.000000)" fill-rule="nonzero">
+            <g id="left" transform="translate(165.000000, 48.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M14.140625,2.75390625 C14.140625,2.62304687 13.9902344,2.55078125 13.8886719,2.63085937 L5.08398438,9.5078125 C4.76367188,9.7578125 4.76367188,10.2402344 5.08398438,10.4902344 L13.8886719,17.3671875 C13.9921875,17.4472656 14.140625,17.375 14.140625,17.2441406 L14.140625,15.734375 C14.140625,15.6705729 14.140625,11.34375 14.140625,2.75390625 Z" id="路径" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

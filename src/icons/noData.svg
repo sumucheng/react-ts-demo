@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="191px" height="133px" viewBox="0 0 191 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.37358426%" y1="36.4757391%" x2="50%" y2="62.2481518%" id="linearGradient-1">
+            <stop stop-color="#FF8D00" offset="0%"></stop>
+            <stop stop-color="#FFEEC1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9964425%" y1="77.2638037%" x2="49.9964425%" y2="-0.736196319%" id="linearGradient-2">
+            <stop stop-color="#FFC875" offset="0%"></stop>
+            <stop stop-color="#FFAE41" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.210576%" y1="-25.9390268%" x2="50%" y2="118.773646%" id="linearGradient-3">
+            <stop stop-color="#FF8D00" offset="0%"></stop>
+            <stop stop-color="#FFEEC1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.7963519%" y1="-25.9390268%" x2="50%" y2="118.773646%" id="linearGradient-4">
+            <stop stop-color="#FF8D00" offset="0%"></stop>
+            <stop stop-color="#FFEEC1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9964425%" y1="77.2638037%" x2="49.9964425%" y2="-0.736196319%" id="linearGradient-5">
+            <stop stop-color="#FFC875" offset="0%"></stop>
+            <stop stop-color="#FFDFA2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9964425%" y1="77.2638037%" x2="49.9964425%" y2="-0.736196319%" id="linearGradient-6">
+            <stop stop-color="#FFC875" offset="0%"></stop>
+            <stop stop-color="#FFDFA2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="113.797383%" y1="136.245716%" x2="5.87831781%" y2="-48.2912888%" id="linearGradient-7">
+            <stop stop-color="#FF8D00" offset="0%"></stop>
+            <stop stop-color="#FFEEC1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="113.797383%" y1="214.55523%" x2="5.87831781%" y2="-137.53796%" id="linearGradient-8">
+            <stop stop-color="#FF8D00" offset="0%"></stop>
+            <stop stop-color="#FFEEC1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Pro备份-12" transform="translate(-94.000000, -255.000000)">
+            <g id="编组" transform="translate(92.000000, 255.000000)">
+                <polygon id="路径-8" fill="url(#linearGradient-1)" points="91.9375176 34.3937272 91.9375176 56.0122552 110.26768 58.6840498 149.495959 40.5252376"></polygon>
+                <polygon id="路径-9" fill="url(#linearGradient-2)" fill-rule="nonzero" points="43.8222578 44.907106 92.3871929 34.3937272 92.3871929 55.9851251"></polygon>
+                <polygon id="路径-6" fill="url(#linearGradient-3)" points="98.2329721 54.5503629 98.2329721 132.05681 149.495959 114.124332 149.495959 40.6912183"></polygon>
+                <polygon id="路径-7" fill="url(#linearGradient-4)" points="43.3725825 45.1894262 43.3725825 117.657764 98.2329721 132.05681 98.2329721 54.697655"></polygon>
+                <polygon id="路径-4" fill="url(#linearGradient-5)" fill-rule="nonzero" points="98.2329721 54.1752338 116.112026 76.2270606 167.482972 59.6700451 149.318098 40.2413975"></polygon>
+                <polygon id="路径-5" fill="url(#linearGradient-6)" fill-rule="nonzero" points="43.8851979 44.7396054 98.2329721 54.2751391 85.7075734 76.2270606 28.9829721 65.8031863"></polygon>
+                <path d="M139.532023,2 C149.838499,2 158.193549,7.2361823 158.193549,13.6953405 C158.193549,20.1544987 149.838499,25.390681 139.532023,25.390681 C136.92822,25.390681 134.448969,25.056478 132.197526,24.452784 L127.632094,29.020294 L127.631466,22.7044364 C123.501303,20.5592171 120.870497,17.3198218 120.870497,13.6953405 C120.870497,7.2361823 129.225546,2 139.532023,2 Z" id="形状结合" fill="url(#linearGradient-7)"></path>
+                <ellipse id="椭圆形" fill="#F2F7FF" cx="130.763354" cy="14.1451613" rx="2.24837662" ry="2.24910394"></ellipse>
+                <ellipse id="椭圆形复制" fill="#F2F7FF" cx="139.75686" cy="14.1451613" rx="2.24837662" ry="2.24910394"></ellipse>
+                <ellipse id="椭圆形复制-2" fill="#F2F7FF" cx="148.750367" cy="14.1451613" rx="2.24837662" ry="2.24910394"></ellipse>
+                <path d="M14,94.7670279 L10.25,94.7670279 L10.25,91.0170279 C10.25,90.1886008 9.57842712,89.5170279 8.75,89.5170279 L8.75,89.5170279 C7.92157288,89.5170279 7.25,90.1886008 7.25,91.0170279 L7.25,94.7670279 L3.5,94.7670279 C2.67157288,94.7670279 2,95.4386008 2,96.2670279 L2,96.2670279 C2,97.095455 2.67157288,97.7670279 3.5,97.7670279 L7.25,97.7670279 L7.25,101.517028 C7.25,102.345455 7.92157288,103.017028 8.75,103.017028 L8.75,103.017028 C9.57842712,103.017028 10.25,102.345455 10.25,101.517028 L10.25,97.7670279 L14,97.7670279 C14.8284271,97.7670279 15.5,97.095455 15.5,96.2670279 L15.5,96.2670279 C15.5,95.4386008 14.8284271,94.7670279 14,94.7670279 Z" id="路径" fill="url(#linearGradient-8)" transform="translate(8.750000, 96.267028) rotate(-15.000000) translate(-8.750000, -96.267028) "></path>
+                <path d="M37.9829721,0 C34.6692636,0 31.9829721,2.6862915 31.9829721,6 C31.9829721,9.3137085 34.6692636,12 37.9829721,12 C41.2966806,12 43.9829721,9.3137085 43.9829721,6 C43.9829721,4.40870106 43.3508311,2.88257758 42.2256128,1.75735931 C41.1003945,0.632141042 39.5742711,0 37.9829721,0 Z M37.9829721,9.195 C36.2184223,9.195 34.7879721,7.76454978 34.7879721,6 C34.7879721,4.23545022 36.2184223,2.805 37.9829721,2.805 C39.7475219,2.805 41.1779721,4.23545022 41.1779721,6 C41.1779721,6.84736669 40.841357,7.66002744 40.2421783,8.25920617 C39.6429996,8.8583849 38.8303388,9.195 37.9829721,9.195 L37.9829721,9.195 Z" id="形状" fill="url(#linearGradient-8)"></path>
+                <circle id="椭圆形" fill="url(#linearGradient-8)" cx="188.702972" cy="35.72" r="3.72"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
