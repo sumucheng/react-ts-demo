@@ -1,20 +1,25 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Dialog from 'components/item/Dialog'
+import Card from 'components/item/Card'
+import Button from 'components/common/Button'
 type Bug = {
     id: number,
     completed: boolean,
     bugLevel: string,
     bugTitle: string,
+    bugDetail: string,
     createTime: Date,
     completedTime: Date | null,
 }
-const Row = styled.ul`
+const Container = styled.div`
+    background-color:#eee;
+`
+const BugList = styled.ul`
     display:flex;
-    justify-content:space-around;
     align-items:center;
-    >li{
-        width:20%;
+    >*{
+        width:33%;
     }
 `
 const Header = styled.div`
@@ -25,12 +30,24 @@ const Header = styled.div`
 const Item = () => {
     const [bugSum, setBugSum] = useState(0)
     const [solved, setSolved] = useState(0)
-    const [bugList, setBugList] = useState<Bug[]>([])
-    const [showDialog, setShowDialog] = useState(true)
+    // const [bugList, setBugList] = useState<Bug[]>([])
+    const [bugList, setBugList] = useState([
+        {
+            id: createId(),
+            completed: false,
+            bugLevel: 'Mid',
+            bugTitle: 'title',
+            bugDetail: 'content',
+            createTime: new Date(),
+            completedTime: null
+        }
+    ])
+    const [showDialog, setShowDialog] = useState(false)
     const tableTitle = [
         { en: 'completed', zh: '完成度' },
         { en: 'bugLevel', zh: '优先级' },
         { en: 'bugTitle', zh: '标题' },
+        { en: 'bugDetail', zh: '详情' },
         { en: 'createTime', zh: '创建时间' },
         { en: 'completedTime', zh: '完成时间' },
     ]
@@ -40,13 +57,14 @@ const Item = () => {
     function handleClose() {
         setShowDialog(false)
     }
-    function handleSubmit(bugTitle: string, bugLevel: string) {
+    function handleSubmit(bugTitle: string, bugLevel: string, bugDetail: string) {
         setShowDialog(false)
         const newBug = {
             id: createId(),
             completed: false,
             bugLevel: bugLevel,
             bugTitle: bugTitle,
+            bugDetail: bugDetail,
             createTime: new Date(),
             completedTime: null
         }
@@ -60,38 +78,21 @@ const Item = () => {
         return id
     }
     return (
-        <div>
+        <Container>
             {showDialog && <Dialog handleClose={handleClose} handleSubmit={handleSubmit} />}
             <Header>
                 <div className="bugSum">
-                    <p>BUG总数</p>
-                    <p>{solved}/{bugSum}</p>
+                    <p>所有问题：{bugSum}</p>
                 </div>
-                <div className="level">
-                    <div className="high">高</div>
-                    <div className="mid">中</div>
-                    <div className="low">低</div>
-                </div>
-                <div className="addBug">
-                    <button onClick={openAddBugDialog}>+</button>
-                </div>
-                <div className="search"><input type="text" /></div>
+                <Button type='default' handleClick={openAddBugDialog}>新增问题</Button>
             </Header>
-            <div className="bugList">
-                <Row className="title">
-                    {tableTitle.map(title => <li className={title.en}>{title.zh}</li>)}
-                </Row>
+            <BugList>
                 {bugList.map((bug: Bug) =>
-                    <Row className='bugItem' key={bug.id}>
-                        <li className="completed">{bug.completed ? '√' : 'x'}</li>
-                        <li className="bugLevel">{bug.bugLevel}</li>
-                        <li className="bugTitle">{bug.bugTitle}</li>
-                        <li className="createTime">{bug.createTime.getDate()}</li>
-                        <li className="completedTime">{bug.completedTime && bug.completedTime.getDate()}</li>
-                    </Row>
+                    <Card bug={bug} key={bug.id}></Card>
                 )}
-            </div>
-        </div>
+            </BugList>
+        </Container>
     )
 }
+
 export default Item

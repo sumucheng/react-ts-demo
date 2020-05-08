@@ -1,70 +1,60 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import React, { useState, ChangeEvent } from 'react'
+import Button from '../common/Button'
+import Radio from '../common/Radio'
 import styled from 'styled-components'
 const DialogWrapper = styled.div`
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.2);
-    position:fixed;
     display:flex;
     justify-content:center;
     align-items:center;
+    z-index: 2049;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.4);
     >form{
-        width:30%;
-        height:30%;
-        background:white;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        position:relative;
-        >.title{
+        background: #ffffff;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 20px;
+        position: relative;
+        width: 35%;
+        padding:25px;    
+        >label{
             display:flex;
             align-items:center;
-            width:80%;
-            margin-bottom:15px;
-            >.label{
-                width:50px;
-                margin-right:10px;
-            }
-        }
-        >.level{
-            display:flex;
-            align-items:center;
-            width:80%;
-            >.label{
+            margin-bottom:20px;  
+                .name{
                 margin-right:10px;
                 width:50px;
-            } 
-            >.bugLevel{
-                width:80%;
-                > button{
-                    border-style:none;
-                    border:0px;
-                    background:white;
-                    padding:5px 10px;
-                    width:50px;
-                }
-                >.selected{
-                border:1px solid grey;
-                border-radius:8px;
-            }
-            }
-            
+            }    
         }
-        >.buttons{
-            position:absolute;
-            right:-10px;
-            top:10px;
-            display:flex;
-            flex-direction:column;
-            >button{
-                width:30px;
-                height:30px;
-                background:white;
+        .detail{
+            height:92px;
+            >textarea{
+                resize:none;
+                font-size:16px;
+            }
+        }
+        .title,.detail{
+            >.input{
+                flex-grow:1;
+                height:100%;
                 border:1px solid #ddd;
+                border-radius:4px;
+                padding: 10px ;
             }
+           
         }
         
+        .buttons{
+            text-align: right;
+            >*{
+                margin-left:10px;
+            }
+        }       
     }
 `
 type Prop = {
@@ -73,16 +63,20 @@ type Prop = {
 }
 const Dialog = (props: Prop) => {
     const [bugTitle, setBugTitle] = useState('')
+    const [bugDetail, setBugDetail] = useState('')
     const [bugLevel, setBugLevel] = useState('Low')
-    function handleChange(e: ChangeEvent) {
+    function handleTitleChange(e: ChangeEvent) {
         setBugTitle((e.target as HTMLInputElement).value)
     }
+    function handleDeatilChange(e: ChangeEvent) {
+        setBugDetail((e.target as HTMLInputElement).value)
+    }
     function selectBugLevel(e: any) {
-        setBugLevel((e.target as HTMLElement).innerText)
+        setBugLevel(e.target.value)
     }
     function handleSubmit(e: any) {
         if (bugTitle.trim() === '') window.alert('bug标题不可为空')
-        else props.handleSubmit(bugTitle, bugLevel)
+        else props.handleSubmit(bugTitle, bugLevel, bugDetail)
     }
     function handleClose() {
         props.handleClose()
@@ -91,20 +85,24 @@ const Dialog = (props: Prop) => {
         <DialogWrapper>
             <form>
                 <label className="title">
-                    <div className='label'>Title</div>
-                    <input type="text" value={bugTitle} onChange={handleChange} />
+                    <div className='name'>标题</div>
+                    <input className="input" type="text" value={bugTitle} onChange={handleTitleChange} />
+                </label>
+                <label className="detail">
+                    <div className='name'>内容</div>
+                    <textarea className="input" value={bugDetail} onChange={handleDeatilChange} />
                 </label>
                 <label className="level">
-                    <div className='label'>Level</div>
-                    <div className="bugLevel">
-                        <button onClick={selectBugLevel} className={bugLevel === 'Low' ? 'selected' : ''}>Low</button>
-                        <button onClick={selectBugLevel} className={bugLevel === 'Mid' ? 'selected' : ''}>Mid</button>
-                        <button onClick={selectBugLevel} className={bugLevel === 'High' ? 'selected' : ''}>High</button>
+                    <div className='name'>优先级</div>
+                    <div className="bugLevel input">
+                        <Radio text="低" label='Low' radio={bugLevel} handleRadio={selectBugLevel}></Radio>
+                        <Radio text="中" label='Mid' radio={bugLevel} handleRadio={selectBugLevel}></Radio>
+                        <Radio text="高" label='High' radio={bugLevel} handleRadio={selectBugLevel}></Radio>
                     </div>
                 </label>
                 <div className="buttons">
-                    <button onClick={handleSubmit}>√</button>
-                    <button onClick={handleClose}>x</button>
+                    <Button type='primary' handleClick={handleSubmit}>确定</Button>
+                    <Button type='default' handleClick={handleClose}>取消</Button>
                 </div>
 
             </form>
